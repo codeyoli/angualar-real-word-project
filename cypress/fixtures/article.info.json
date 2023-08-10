@@ -1,0 +1,6 @@
+{
+   "title": "Reg vs E2E",
+   "description": "Test Execution Differences",
+   "body": "Regression is for user story verificaton and e2e is done by the end user or product owner",
+   "tag": "testing"
+}

@@ -1,0 +1,122 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-10T00:31:53.817Z",
+    "end": "2023-08-10T00:31:58.703Z",
+    "duration": 4886,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5221b792-8779-4fed-a298-b43b927845b2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\reg.cy.js",
+      "file": "cypress\\e2e\\reg.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c10e1fac-baae-40bf-bc10-815f1d75616a",
+          "title": "Register test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify user can register",
+              "fullTitle": "Register test cases verify user can register",
+              "timedOut": null,
+              "duration": 3255,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_pg.pg.signUp.fillOutInfo({\n  username: Cypress.env('username'),\n  email: Cypress.env('email'),\n  password: Cypress.env('password')\n});",
+              "err": {},
+              "uuid": "6de837ad-6361-41bb-b779-fbc89898dc9e",
+              "parentUUID": "c10e1fac-baae-40bf-bc10-815f1d75616a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify user cannot sign up with existing username",
+              "fullTitle": "Register test cases verify user cannot sign up with existing username",
+              "timedOut": null,
+              "duration": 1595,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_pg.pg.signUp.fillOutInfo({\n  username: Cypress.env('username'),\n  email: Cypress.env('email'),\n  password: Cypress.env('password')\n});\n_pg.pg.signUpVerify.duplicateUserMsg();",
+              "err": {},
+              "uuid": "6b6db648-bb0d-42cc-babb-63534029fc66",
+              "parentUUID": "c10e1fac-baae-40bf-bc10-815f1d75616a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6de837ad-6361-41bb-b779-fbc89898dc9e",
+            "6b6db648-bb0d-42cc-babb-63534029fc66"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4850,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "conduit-[name]-[status]-[datetime]",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "conduit-[name]-[status]-[datetime]",
+        "timestamp": "longDate"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
